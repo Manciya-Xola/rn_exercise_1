@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.appContainer}>
-      <Text>my first expo app</Text>
+      <Text>A Basic React App</Text>
         <TextInput
           style={styles.textInputName}
           placeholder="Your name here"
+        />
+        <Button
+          title="Click me"
+          color = "#fff"
         />
     </View>
   );
